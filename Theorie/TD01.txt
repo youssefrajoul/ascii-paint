@@ -63,3 +63,5 @@
 	perimeter: 16.0
 	Rectangle : [(2.0, 5.0), (7.0, 8.0)]
 	perimeter: 16.0
+6.2)
+	
