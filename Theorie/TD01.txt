@@ -43,3 +43,23 @@
 	Circle : [(0.0, 0.0), 5.0]
 	Circle : [(2.0, 5.0), 5.0]
 	Circle : [(0.0, 0.0), 5.0]
+5.2)
+	1 instance de la classe Point
+	1 instance de la classe Circle
+	l'instance referencee par la variable p et p2 c'est p
+	l'attribut center reference l'instance p
+5.3)
+	Circle : [(0.0, 0.0), 5.0]
+	Circle : [(0.0, 0.0), 5.0]
+	Circle : [(-2.0, -5.0), 5.0]
+5.4)
+	Circle : [(0.0, 0.0), 5.0]
+	Circle : [(0.0, 0.0), 5.0]
+	Circle : [(0.0, 0.0), 5.0]
+5.5)
+	3 instances
+6.1)
+	Rectangle : [(0.0, 0.0), (5.0, 3.0)]
+	perimeter: 16.0
+	Rectangle : [(2.0, 5.0), (7.0, 8.0)]
+	perimeter: 16.0
