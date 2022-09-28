@@ -54,3 +54,15 @@
 	Constructor Detail
 	Object
 	public Object()
+4.5)
+	code à l'état originale.
+----------------------------------------------------------------------------------------------------
+5.1)
+	(0.0, 0.0) - not pinned
+	(1.0, 1.0) - pinned
+5.2)
+	celle de PinnablePoint car l’objet référencé par la variable à ce moment-là
+	est de type PinnablePoint ? (on peut vérifer on utilisant la method getClass).
+5.3)
+	java: move(double,double) in PinnablePoint cannot override move(double,double) in Point
+  	overridden method does not throw java.lang.Exception
