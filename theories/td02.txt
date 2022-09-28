@@ -39,3 +39,18 @@
 3.4)
 	code à l'état originale.
 ----------------------------------------------------------------------------------------------------
+4.1)
+	constructor of A
+	constructor of B
+	constructor of C
+4.2)
+	constructor of A
+	constructor of B
+4.3)
+	constructor of A
+	constructor of B
+	constructor of C
+4.4)
+	Constructor Detail
+	Object
+	public Object()
