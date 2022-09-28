@@ -29,3 +29,13 @@
 2.4)
 	code à l'état originale.
 ----------------------------------------------------------------------------------------------------
+3.1)
+	java: call to super must be first statement in constructor
+3.2)
+	Pour enlever le super du constructeur, il faut au moins avoir le constructeur par default
+	dans la classe super.
+3.3)
+	Non.
+3.4)
+	code à l'état originale.
+----------------------------------------------------------------------------------------------------
