@@ -19,9 +19,4 @@ public class Circle extends ColoredShape {
     public void move(double dx, double dy){
 
     }
-
-    @Override
-    public char getColor() {
-        return 0;
-    }
 }
