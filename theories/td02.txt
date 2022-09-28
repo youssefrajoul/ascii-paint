@@ -7,7 +7,8 @@
 	ColoredPoint, et vu que l'objet p est de type Point alors il faut faire un casting pour utiliser cette method.
 	Si on supprime(comment) cette ligne, le probleme disparut
 1.3)
-	On peut pas ajouter cette ligne a notre code. Car on peut pas appeler le constructeur de la super-classe pour un objet de type sub-classe, mais l'inverse 
+	On peut pas ajouter cette ligne a notre code. Car on peut pas appeler le constructeur de la super-classe 
+	pour un objet de type sub-classe, mais l'inverse 
 	est vrai.
 1.4)
 	Non on peut pas sans utilisation du mot clé super
@@ -16,4 +17,15 @@
 1.6)
 	cannot inherit from final Point. le mot cle final rend la classe prive alors on peut pas l'utiliser ailleur
 1.7)
-	code a l'etat originale
+	code a l'etat originale.
+----------------------------------------------------------------------------------------------------
+2.1)
+	Oui, car toute classe a la classe Objet comme super classe, alors tous les objers implementes les methods
+	de cette classe.
+2.2)
+	Oui, Vu que la classe ColoredPoint herite de la classe Point alors elle herite aussi de la classe Objet
+2.3)
+	Oui, parceque la method hashCode est herité de la classe Objet.
+2.4)
+	code à l'état originale.
+----------------------------------------------------------------------------------------------------
