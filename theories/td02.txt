@@ -1,0 +1,19 @@
+1.1)
+	(3.0, 6.0) - FF0000FF
+	x: 3.0
+	color : FF0000FF
+1.2)
+	c'est la ligne 10 qui pose problème. Car la method getColor ne se trouve que dans la Class
+	ColoredPoint, et vu que l'objet p est de type Point alors il faut faire un casting pour utiliser cette method.
+	Si on supprime(comment) cette ligne, le probleme disparut
+1.3)
+	On peut pas ajouter cette ligne a notre code. Car on peut pas appeler le constructeur de la super-classe pour un objet de type sub-classe, mais l'inverse 
+	est vrai.
+1.4)
+	Non on peut pas sans utilisation du mot clé super
+1.5)
+	une classe ne peut pas etre super et sub de la meme classe
+1.6)
+	cannot inherit from final Point. le mot cle final rend la classe prive alors on peut pas l'utiliser ailleur
+1.7)
+	code a l'etat originale
