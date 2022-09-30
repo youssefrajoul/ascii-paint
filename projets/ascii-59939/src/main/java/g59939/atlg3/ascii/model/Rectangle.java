@@ -7,7 +7,7 @@ public class Rectangle extends ColoredShape {
 
     public Rectangle(char color, Point upperLeft, double width, double height) {
         super(color);
-        this.upperLeft = upperLeft;
+        this.upperLeft = new Point(upperLeft.getX(), upperLeft.getY());
         this.width = width;
         this.height = height;
     }
