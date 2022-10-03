@@ -9,12 +9,12 @@ public class Drawing {
 
 
     public Drawing() {
-
     }
 
     public Drawing(int height, int width) {
         this.height = height;
         this.width = width;
+        shapes = new ArrayList<>();
     }
 
     public void addShape(Shape shape){
@@ -22,9 +22,11 @@ public class Drawing {
     }
 
     public Shape getShapeAt(Point point) {
-        for(Shape element : shapes) {
-            if (element.isInside(point))
-                return element;
+        for(Shape shape : shapes) {
+            if (shape.isInside(point))
+                return shape;
+            else
+                return null;
         }
         return null;
     }

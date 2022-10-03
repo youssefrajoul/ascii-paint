@@ -5,7 +5,7 @@ public class Rectangle extends ColoredShape {
     private double width;
     private double height;
 
-    public Rectangle(char color, Point upperLeft, double width, double height) {
+    public Rectangle(Point upperLeft, double width, double height, char color) {
         super(color);
         this.upperLeft = new Point(upperLeft.getX(), upperLeft.getY());
         this.width = width;
@@ -14,10 +14,10 @@ public class Rectangle extends ColoredShape {
 
     @Override
     public boolean isInside(Point p) {
-        Point upperRight = new Point(p.getX() + width, p.getY());
-        Point lowerLeft = new Point(p.getX(), p.getY() + height);
-        return p.getX() >= upperRight.getX() && p.getX() <= upperLeft.getX()
-                && p.getY() >= upperRight.getY() && p.getY() <= lowerLeft.getY();
+        return p.getX() >= upperLeft.getX() && p.getY() >= upperLeft.getY()
+                && p.getX() <= (upperLeft.getX() + width)
+                && p.getY() <= (upperLeft.getY() + height);
+        //return upperLeft.distanceTo(p) <= width && upperLeft.distanceTo(p) <= height;
     }
 
     @Override

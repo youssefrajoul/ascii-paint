@@ -6,7 +6,7 @@ public class Circle extends ColoredShape {
     private Point center;
     private double radius;
 
-    public Circle(char color, Point center, double radius) {
+    public Circle(Point center, double radius, char color) {
         super(color);
         this.center = new Point(center.getX(), center.getY());
         this.radius = radius;
