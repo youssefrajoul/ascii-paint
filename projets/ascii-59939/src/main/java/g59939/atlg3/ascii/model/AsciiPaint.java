@@ -8,8 +8,8 @@ public class AsciiPaint {
         this.drawing = new Drawing(50, 50);
     }
 
-    public AsciiPaint(int width, int height) {
-        this.drawing = new Drawing(width, height);
+    public AsciiPaint(int height, int width) {
+        this.drawing = new Drawing(height, width);
     }
     public void newCircle(int x,int y, double radius, char color) {
         Point point = new Point(x, y);
@@ -31,5 +31,9 @@ public class AsciiPaint {
 
     public Drawing getDrawing(){
         return this.drawing;
+    }
+
+    public void clearShapesList(){
+        drawing.clearShapes();
     }
 }

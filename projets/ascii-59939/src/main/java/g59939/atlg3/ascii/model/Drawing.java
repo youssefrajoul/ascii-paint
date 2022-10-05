@@ -17,6 +17,10 @@ public class Drawing {
         shapes = new ArrayList<>();
     }
 
+    public ArrayList<Shape> getShapes(){
+        return shapes;
+    }
+
     public void addShape(Shape shape){
         shapes.add(shape);
     }
@@ -25,8 +29,6 @@ public class Drawing {
         for(Shape shape : shapes) {
             if (shape.isInside(point))
                 return shape;
-            else
-                return null;
         }
         return null;
     }
@@ -37,5 +39,16 @@ public class Drawing {
 
     public int getWidth(){
         return width;
+    }
+
+    public void clearShapes(){
+        shapes.clear();
+    }
+
+    @Override
+    public String toString() {
+        return "Drawing{" +
+                "shapes=" + shapes +
+                '}';
     }
 }
