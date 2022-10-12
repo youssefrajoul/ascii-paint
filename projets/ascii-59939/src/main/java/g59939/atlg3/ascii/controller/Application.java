@@ -8,21 +8,6 @@ import java.io.*;
 import java.util.*;
 
 public class Application {
-    /*  -- instructions du prof atlg3--
-        private model;
-        private view;
-
-        1 gerer la boucle applicative
-        public start () {
-            while () {
-                add;
-                show;
-                exit;
-                help;
-            }
-        }
-        2 traduire les interactions utilisateur  en action sur le model
-     */
     private AsciiPaint paint;
     private AsciiView view;
 
@@ -34,16 +19,26 @@ public class Application {
     public void start() {
         Scanner scan = new Scanner(System.in);
         int quit = 0;
+        System.out.println("--------------Welcome to ascii paint--------------");
         while (quit == 0) {
             paint.clearShapesList();
+
             askInputs();
             view.displayDrawing(paint.getDrawing());
             System.out.println("To Quit enter 1 to continue drawing enter 0");
             quit = scan.nextInt();
         }
+        System.out.println("Bye...");
     }
 
     private void askInputs() {
+        System.out.println("How to paint shapes ?\n" +
+                "to add shape enter:\n" +
+                "add circle x y radius color, or\n" +
+                "add rectangle x y width height color, or\n" +
+                "add square x y side color\n" +
+                "to show your shapes enter\n" +
+                "show and press enter");
         String nextLine;
         String[] inputs;
         String shape = "";

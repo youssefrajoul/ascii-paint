@@ -7,8 +7,14 @@ public class Drawing {
     private int height;
     private int width;
 
+    private final int DEFAULT_WIDTH = 30;
+    private final int DEFAULT_HEIGHT = 50;
+
 
     public Drawing() {
+        height = DEFAULT_HEIGHT;
+        width = DEFAULT_WIDTH;
+        shapes = new ArrayList<>();
     }
 
     public Drawing(int height, int width) {
